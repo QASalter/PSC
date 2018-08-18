@@ -13,10 +13,7 @@ html, body {
   margin: 0;
   padding: 0;
 }
-.about__statement__2 {
-  margin-top: 1px;
-  line-height: 85%;
-}
+
 body {
     font-size: 22px;
     line-height: 28px;
@@ -37,7 +34,7 @@ body {
 }
 
 .about video.can-play {
-    opacity: 0.8;
+    opacity: 1;
 }
 
 .about__statement {
@@ -68,6 +65,19 @@ body {
 }
 .about__statement__1 {
   margin-bottom: 10px !important;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+}
+
+.about__statement__2 {
+  margin-top: 1px;
+  line-height: 85%;
+  animation: fadein 4s;
+  -moz-animation: fadein 4s; /* Firefox */
+  -webkit-animation: fadein 4s; /* Safari and Chrome */
+  -o-animation: fadein 4s; /* Opera */
 }
 
 .masthead .container {
@@ -92,6 +102,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .about__statement p {
     margin: 0;
+    text-shadow: 2px 2px #737373;
+
     -webkit-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
     -moz-transition: opacity 1s ease;
@@ -127,6 +139,7 @@ article, aside, footer, header, hgroup, main, nav, section {
     display: block;
     float: left;
     background-color: none;
+        margin-left: 2vw;
 }
 
 ol, ul {
@@ -152,4 +165,37 @@ blockquote, body, code, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4,
 
 a {
     text-decoration: none;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
