@@ -155,7 +155,7 @@ blockquote, body, code, dd, div, dl, dt, fieldset, figure, form, h1, h2, h3, h4,
     display: inline-block;
     margin-right: 20px;
 }
-.section--home .masthead nav a.is-active, .section--work .masthead nav a.is-active {
+.section--home .masthead nav a.active, .section--work .masthead nav a.is-active {
     border-color: white;
 }
 

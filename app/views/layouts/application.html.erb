@@ -5,9 +5,8 @@
     <%= csrf_meta_tags %>
     <%= stylesheet_pack_tag 'application' %>
     <%= javascript_pack_tag 'application', :defer => "defer" %>
-
+    <%= render 'layouts/navigation' %>
   </head>
-
   <body class="section--home">
     <%= yield %>
   </body>

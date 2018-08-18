@@ -1,0 +1,12 @@
+<header class="masthead">
+  <div class="container">
+    <h1><a href="#">PSC</a></h1>
+    <nav>
+      <ul>
+        <li><%= active_link_to('About', root_path, active: :exclusive) %></li>
+        <li><%= active_link_to('Contact', contact_index_path) %></li>
+        <li><%= active_link_to('Story', story_index_path) %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
